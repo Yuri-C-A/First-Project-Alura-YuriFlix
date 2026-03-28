@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS para temas */
+:root {
+    --bg-color: #141414;
+    --text-color: #ffffff;
+    --hover-bg: rgba(229, 9, 20, 0.1);
+    --hover-border: #e50914;
+    --button-bg: transparent;
+}
+
+/* Tema claro */
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --hover-bg: rgba(229, 9, 20, 0.1);
+    --hover-border: #e50914;
+    --button-bg: #f0f0f0;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container principal */
+main {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Cabeçalho */
+header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+/* Lista de perfis */
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+/* Cada perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botão do perfil */
+.profile button {
+    background: var(--button-bg);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.profile button:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-bg);
+    border: 2px solid var(--hover-border);
+}
+
+/* Imagem do avatar */
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+/* Nome do perfil */
+.profile span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* Botão de alternância de tema */
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--button-bg);
+    border: 2px solid var(--hover-border);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--hover-bg);
+}

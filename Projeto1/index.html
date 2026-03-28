@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuriFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+            <h1>Quem está assistindo?</h1>
+        </header>
+        <ul class="profiles" aria-label="Escolha de perfil">
+            <li class="profile">
+                <a href="/catalogo/catalogo.html"
+                class="perfil">
+                <button type="button" aria-label="Selecionar Perfil 1" id="profile-1" onclick="selectProfile(this)">
+                    <img src="/assets/Perfil 1.png" alt="Avatar Perfil 1">
+                    <span id="profile-1-label">Yuri</span>
+                </button>
+            </li>
+            <li class="profile">
+                <a href="/catalogo/catalogo.html" class="perfil">
+                    <button type="button" aria-label="Selecionar Perfil 2" id="profile-2" onclick="selectProfile(this)">
+                        <img src="/assets/Perfil 2.png" alt="Avatar Perfil 2">
+                        <span id="profile-2-label">José</span>
+                    </button>
+                </a>
+            </li>
+            <li class="profile">
+                <a href="/catalogo/catalogo.html" class="perfil">
+                    <button type="button" aria-label="Selecionar Perfil 3" id="profile-3" onclick="selectProfile(this)">
+                        <img src="/assets/Perfil 3.png" alt="Avatar Perfil 3">
+                        <span id="profile-3-label">Maria</span>
+                    </button>
+                </a>
+            </li>
+            <li class="profile">
+                <a href="/catalogo/catalogo.html" class="perfil">
+                    <button type="button" aria-label="Selecionar Perfil 4" id="profile-4" onclick="selectProfile(this)">
+                        <img src="/assets/Perfil 4.png" alt="Avatar Perfil 4">
+                        <span id="profile-4-label">Ana</span>
+                    </button>
+                </a>
+            </li>                
+        </ul>  
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
